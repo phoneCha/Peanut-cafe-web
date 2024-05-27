@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/Test code/navbar.css">
+    <link rel="stylesheet" href="/peanut cafe/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="header"></header>
+    <script>
+        fetch('/Test code/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+    <section class="content">
+        <div class="Intro">
+            <div class="mySlides slide-first">
+                <img src="/assets/mainpage slide (1).png" alt="">
+            </div>
+            <div class="mySlides slide-second">
+                <img src="/assets/Property 1=Variant4 (1).png" alt="">
+            </div>
+            <div class="mySlides slide-third">
+                <img src="/assets/Property 1=Frame 6 (2).png" alt="">
+            </div>
+            <div class="mySlides slide-fourth">
+                <img src="/assets/Property 1=Frame 7 (1).png" alt="">
+            </div>
+            <div class="overlay"></div>
+            <h1> Peanut </h1>
+        </div>
+
+
+        <div class="top-menu">
+            <p> 'Peanut' is more than just a name; it embodies a unique blend of coffee's warmth and the exquisite
+                taste of
+                carefully selected peanuts. With desserts infused with the essence of peanuts in every item on the
+                menu, at
+                'Peanut', you'll experience a distinctive coffee-drinking journey unlike any other.
+            </p>
+
+            <div class="top">
+                <h2>Nutty Delight Supreme Cheesecake</h2>
+                <img src="/assets/Rectangle 4 (1).png" alt="">
+                <p>The "Nutty Delight Supreme Cheesecake" is a luxurious dessert featuring creamy
+                    peanut butter filling,
+                    a crunchy peanut crust, and a sprinkling of chopped peanuts on top. It offers a perfect balance of
+                    nutty flavors and delightful textures, making it a decadent treat for any occasion.
+                </p>
+            </div>
+
+            <div class="top">
+                <h2>Crunchy Peanut Hazelnut Latte</h2>
+                <img src="/assets/Rectangle 5.png" alt="">
+                <p>The "Crunchy Peanut Hazelnut Latte" is a delicious coffee beverage that combines
+                    freshly brewed
+                    espresso with sweet hazelnut flavoring and a topping of crunchy chopped peanuts. This concoction
+                    offers a perfect blend of rich coffee, sweet nuttiness, and delightful texture, making it a unique
+                    and indulgent treat for coffee lovers.
+                </p>
+            </div>
+
+            <div class="top">
+                <h2>Creamy Dream Peanut Butter</h2>
+                <img src="/assets/Rectangle 6.png" alt="">
+                <p>"Creamy Dream Peanut Butter" is a smooth and velvety spread with a rich and
+                    balanced flavor profile.
+                    Made from high-quality peanuts and crafted with attention to detail, it offers versatility in its
+                    use, whether as a spread, dip, or ingredient in recipes.
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <h3> Peanuts Cafe</h3>
+            <div class="container">
+
+                <div class="imgContainer">
+
+                    <div class="slide_div" id="slide_1">
+                        <img src="/assets/Rectangle 8.png" alt="" class="img" id="img1">
+                        <a href="#slider1" class="button" id="button1"></a>
+                    </div>
+                    <div class="slide_div" id="slide_2">
+                        <img src="/assets/Rectangle 9.png" alt="" class="img" id="img2">
+                        <a href="#slider2" class="button" id="button2"></a>
+                    </div>
+                    <div class="slide_div" id="slide_3">
+                        <img src="/assets/Rectangle 10.png" alt="" class="img" id="img3">
+                        <a href="#slider3" class="button" id="button3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+    <script>
+        fetch('/peanut cafe/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+    <script src="home.js"></script>     
+</body>
+
+</html>

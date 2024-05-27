@@ -1,0 +1,215 @@
+.Footercontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* height: 50px; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #ffe6ee;
+}
+
+.bottom-bar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffe6ee;
+}
+
+.footer-logo {
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+.footer-contract {
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 50px;
+}
+
+.footer-link {
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 70px;
+}
+
+.footer-logo img {
+    width: 250px;
+    height: 300px;
+}
+
+.footer-contract img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.points_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.single_point_div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.single_point_div .icon {
+    margin-right: 20px;
+}
+
+.text-1 {
+    color: #865d37;
+    display: block;
+    width: 100%;
+    white-space: pre-line;
+    text-align: left;
+    margin-left: 0;
+    font-size: 19px;
+}
+
+.text-2 {
+    color: #865d37;
+    font-size: 19px;
+}
+
+.footer-logo p,
+.footer-contract p,
+.bottom-bar p {
+    margin: 5px 0;
+}
+
+.footer-link {
+    display: block;
+    white-space: pre-line;
+    text-align: left;
+    margin-left: 0;
+    align-self: flex-start;
+    margin-top: 1px;
+    line-height: 2;
+    color: #865d37;
+    font-size: 19px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: #865d37;
+}
+
+.bottom-bar p {
+    margin-right: 10px;
+    padding-left: 100px;
+    font-size: 19px;
+    color: #865d37;
+}
+
+.bottom-bar .social-icons {
+    margin-right: 100px;
+    size: 19px;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 20px;
+    /* เพิ่มระยะห่างระหว่างไอคอน */
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+    /* ลบระยะห่างระหว่างไอคอนที่เป็นตัวสุดท้าย */
+}
+
+.social-icons img {
+    width: 30px;
+    /* ปรับขนาดของไอคอนโซเชียลมีเดีย */
+    height: 30px;
+}
+
+/* CSS สำหรับหน้าจอขนาดเล็ก (เช่น โทรศัพท์มือถือ) */
+@media only screen and (max-width: 600px) {
+    .Footercontainer {
+        flex-direction: column;
+        /* เรียงเป็นคอลัมน์เดียวกันเมื่ออุปกรณ์มีขนาดเล็ก */
+        padding: 10px 20px;
+        /* เพิ่ม padding เพื่อแยกข้อมูลจากขอบของหน้าจอ */
+    }
+
+    .footer-logo {
+        text-align: center;
+        /* จัดตำแหน่งโลโก้กึ่งกลาง */
+        align-self: center;
+        /* จัดตำแหน่งโลโก้ในแนวตั้งกึ่งกลาง */
+        margin-top: 30px;
+        /* ย้ายโลโก้ลงมาให้มีระยะห่างด้านบน */
+    }
+
+    .footer-logo img {
+        width: 250px;
+        /* กำหนดขนาดของโลโก้ */
+        height: auto;
+        /* รักษาอัตราส่วนเมื่อลดขนาดของโลโก้ */
+    }
+
+    .footer-contract {
+        margin: 0 auto;
+        /* กำหนด margin เป็น auto เพื่อให้ div อยู่ตรงกลาง */
+        flex: none;
+        /* ลบ flex-grow เพื่อไม่ให้ div flex-2 ขยายตัว */
+    }
+
+    .single_point_div {
+        margin-top: 0%;
+        margin-bottom: 10px;
+    }
+
+    .footer-link {
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .bottom-bar .social-icons {
+        margin: 0 auto;
+    }
+
+    .bottom-bar {
+        flex-direction: column;
+        /* เรียงเป็นคอลัมน์เดียวกัน */
+        align-items: center;
+        /* จัดตำแหน่งไอคอนโซเชียลกึ่งกลาง */
+        padding: 10px 20px;
+        /* เพิ่ม padding เพื่อแยกข้อมูลจากขอบของหน้าจอ */
+    }
+
+    .bottom-bar p {
+        font-size: 12px;
+        /* ลดขนาดตัวอักษร */
+        margin: 0 auto;
+        /* เพิ่มระยะห่างด้านล่างของข้อความ */
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .social-icons li {
+        margin-right: 15px;
+        /* เพิ่มระยะห่างระหว่างไอคอน */
+    }
+
+}

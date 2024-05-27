@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Intro img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.Intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  background-color: #fffae1;
+  width: 100%;
+  bottom: 0px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #fffae1, rgba(255, 251, 243, 0));
+  content: "";
+}
+
+h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 20px 10px;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #865d37;
+  font-size: 7rem;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 2;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 150px;
+  position: relative;
+}
+
+.pic {
+  width: 429px;
+}
+.text {
+  text-align: left;
+  align-items: center;
+  padding: 10px 60px;
+}
+.text h2{
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #865D37;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.text p{
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1023px) {
+  .Intro img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 70px; /* ขยับลงมาต่อจาก header ที่มีความสูง 70px */
+  }
+
+  .Intro {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content {
+    background-color: #fffae1;
+    width: 100%;
+    bottom: 0px;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%; /* ปรับความสูงของ overlay ให้เหมาะสม */
+    background: linear-gradient(to top, #fffae1, rgba(255, 251, 243, 0));
+    content: "";
+  }
+
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 10px;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #865d37;
+    font-size: 5rem;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+  }
+
+  .product {
+    flex-direction: column; /* สลับเรียงลงมาในคอลัมน์เมื่อขนาดหน้าจอเล็กลง */
+  }
+
+  .pic {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    max-width: 100%; 
+    margin-bottom: 10px; 
+    order: 1;
+  }
+
+  .text {
+    text-align: center; /* จัดตำแหน่งข้อความกลาง */
+    align-items: center;
+    padding: 10px 20px; /* ปรับระยะห่างข้อความ */
+    order: 2;
+  }
+
+  .text h2 {
+    width: 100%;
+    font-size: 27px; /* ปรับขนาดตัวหัวข้อให้เหมาะสมกับขนาดหน้าจอเล็กลง */
+    text-align: center; /* จัดตำแหน่งข้อความกลาง */
+    margin-bottom: 10px; /* ขยับข้อความลงมาเพื่อทำช่องว่างระหว่างข้อความกับข้อความ */
+    white-space: nowrap;
+  } 
+
+  .text p{
+    width: 100%;
+    font-size: 18px; /* ปรับขนาดตัวหัวข้อให้เหมาะสมกับขนาดหน้าจอเล็กลง */
+    text-align: justify;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Intro img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 70px; /* ขยับลงมาต่อจาก header ที่มีความสูง 70px */
+  }
+
+  .Intro {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .content {
+    background-color: #fffae1;
+    width: 100%;
+    bottom: 0px;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%; /* ปรับความสูงของ overlay ให้เหมาะสม */
+    background: linear-gradient(to top, #fffae1, rgba(255, 251, 243, 0));
+    content: "";
+  }
+
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px 10px;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #865d37;
+    font-size: 3rem;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+  }
+
+  .product {
+    flex-direction: column; /* สลับเรียงลงมาในคอลัมน์เมื่อขนาดหน้าจอเล็กลง */
+  }
+
+  .pic {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    max-width: 100%; 
+    margin-bottom: 10px; 
+    order: 1;
+  }
+
+  .text {
+    text-align: center; /* จัดตำแหน่งข้อความกลาง */
+    align-items: center;
+    padding: 10px 20px; /* ปรับระยะห่างข้อความ */
+    order: 2;
+  }
+
+  .text h2 {
+    width: 100%;
+    font-size: 27px; /* ปรับขนาดตัวหัวข้อให้เหมาะสมกับขนาดหน้าจอเล็กลง */
+    text-align: center; /* จัดตำแหน่งข้อความกลาง */
+    margin-bottom: 10px; /* ขยับข้อความลงมาเพื่อทำช่องว่างระหว่างข้อความกับข้อความ */
+    white-space: nowrap;
+  } 
+
+  .text p{
+    width: 100%;
+    font-size: 18px; /* ปรับขนาดตัวหัวข้อให้เหมาะสมกับขนาดหน้าจอเล็กลง */
+    text-align: justify;
+
+  }
+}
+

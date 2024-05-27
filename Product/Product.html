@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Test code/navbar.css">
+    <link rel="stylesheet" href="/peanut cafe/footer.css">
+    <link rel="stylesheet" href="Product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header"></header>
+    <script>
+        fetch('/Test code/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <section class="content">
+        <div class="Intro">
+            <img src="/assets/Rectangle 32.png" alt="">
+            <div class="overlay"></div>
+            <h1>Product of Peanut cafe</h1>
+        </div>
+
+        <div class="top-product">
+            <div class="product">
+                <div class="pic">
+                    <img src="/assets/jar1.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Classic Smooth Peanut Butter</h2>
+                    <p> Made from freshly roasted peanuts, our peanut butter is a blend of four
+                    high-quality varieties: Hazelnut, Almond, Cashew, and Sesame.
+                    Packed with protein, fiber, minerals, and vitamins,
+                    it's not only delicious but also guaranteed to be good for your health! </p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="text">
+                    <h2>Chunky Chocolate Mess Peanut Butter</h2>
+                    <p> a creamy peanut butter filled with large chocolate chunks,
+                    offering a delightful blend of smoothness and crunchiness.
+                    Perfect for spreading on bread or pairing with ice cream and fruits,
+                    it adds a delicious twist to every bite. </p>
+                </div>
+                <div>
+                    <img src="/assets/jar2.png" alt="">
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="pic">
+                    <img src="/assets/jar3.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Matcha Green Tea Peanut Butter</h2>
+                    <p> a creamy peanut butter infused with the earthy flavor of matcha.
+                    It's perfect for spreading on toast or adding to smoothies
+                    for a delicious and nutritious boost.</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="text">
+                    <h2>Golden Almond Delight Butter</h2>
+                    <p> Indulge in the rich, creamy goodness of our almond butter.
+                    Packed with nutrients and bursting with flavor,
+                    it's the perfect addition to your favorite snacks.
+                    Dive into a jar today and elevate your taste experience at our café. </p>
+                </div>
+                <div class="pic">
+                    <img src="/assets/jar4.png" alt="">
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="pic">
+                    <img src="/assets/jar5.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Wild Flower Honey</h2>
+                    <p> Drizzle it over your favorite pastries,
+                    stir it into your morning tea,
+                    or add a dollop to your yogurt for a touch of natural indulgence.
+                    Elevate your taste experience with our Wild Flower Honey at our café today!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer"></footer>
+    <script>
+        fetch('/peanut cafe/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+    </script>
+
+</body>
+
+</html>
