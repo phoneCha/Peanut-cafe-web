@@ -35,7 +35,7 @@ Peanut-Cafe/
 ## Installation & Usage
 1. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/Peanut-Cafe.git
+   git clone https://github.com/phoneCha/Peanut-cafe-web
    ```
 2. Open the project folder and run the `index.html` file in a browser.
 
@@ -43,10 +43,4 @@ Peanut-Cafe/
 - Implement a backend for order processing.
 - Add a reservation system.
 - Enhance UI with animations and effects.
-
-## Author
-Developed by [Your Name].
-
-## License
-This project is licensed under the MIT License.
 
